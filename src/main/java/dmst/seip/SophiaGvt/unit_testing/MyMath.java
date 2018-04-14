@@ -6,12 +6,18 @@ public class MyMath {
 		
 		double result = 0.0;
 
-			if (denom == 0) {
-				throw new IllegalArgumentException("'denominator' cannot be  zero");
-			} else {
-				result = (double)num/denom;
-			}
+		if (denom == 0) {
+			throw new IllegalArgumentException("'denominator' cannot be  zero");
+		} else {
+			result = (double)num/denom;
+		}
 
 		return result;
 	} 
+	
+	public int reverseNumber(int number) {
+		
+		int result = -number;
+		return result;
+	}
 }
