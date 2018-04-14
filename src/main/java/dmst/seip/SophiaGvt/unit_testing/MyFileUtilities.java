@@ -7,8 +7,20 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
+/**
+ * 
+ * @author SophiaGvt
+ *
+ */
 public class MyFileUtilities {
 
+	/**
+	 * This method reads a file path and returns 
+	 * an array containing the grades.
+	 * 
+	 * @param filePath
+	 * @return gradesArr
+	 */
 	public int[] readFile(String filePath) {
 		
 		ArrayList<Integer> grades = new ArrayList<Integer>();
@@ -20,8 +32,9 @@ public class MyFileUtilities {
 			BufferedReader br = new BufferedReader(new FileReader(file));			  
 			String line;
 			
+			// Reads the file
 			while ((line = br.readLine()) != null) {
-				grades.add(Integer.parseInt(line));
+				grades.add(Integer.parseInt(line)); 
 			}
 			br.close();
 		} catch (FileNotFoundException ex1){
@@ -30,6 +43,7 @@ public class MyFileUtilities {
 			throw new IllegalArgumentException("Error while reading the file");
 		}
 
+		// Convert the Arraylist to an Array
 		int[] gradesArr = new int[grades.size()]; 
 		for (int i = 0; i < grades.size(); i++) {
 			gradesArr[i] = grades.get(i);

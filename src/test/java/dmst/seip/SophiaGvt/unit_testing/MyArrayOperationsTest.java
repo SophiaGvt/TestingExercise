@@ -4,10 +4,17 @@ import org.junit.Test;
 import org.junit.Assert;
 import static org.mockito.Mockito.*;
 
+/**
+ * 
+ * @author SophiaGvt
+ *
+ */
+
 public class MyArrayOperationsTest {
 
 	MyArrayOperations mao = new MyArrayOperations();
 	
+
 	@Test
 	public void test_freq_mocking() {
 		
@@ -22,6 +29,7 @@ public class MyArrayOperationsTest {
 		int[] arrayfile2 = {0};
 		int[] arrayfile3 = {6, 5, 9, 2, 4, 4};
 		
+		// Prepare the array that the readFile() method was supposed to do.
 		when(mfu.readFile(file1)).thenReturn(arrayfile1);
 		when(mfu.readFile(file2)).thenReturn(arrayfile2);
 		when(mfu.readFile(file3)).thenReturn(arrayfile3);
