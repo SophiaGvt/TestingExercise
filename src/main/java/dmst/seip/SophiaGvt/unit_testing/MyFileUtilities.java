@@ -40,7 +40,7 @@ public class MyFileUtilities {
 		} catch (FileNotFoundException ex1){
 			throw new IllegalArgumentException("Error while reading the file");
 		} catch (IOException ex2) {
-			throw new IllegalArgumentException("Error while reading the file");
+			throw new IllegalArgumentException("Something went wrong");
 		}
 
 		// Convert the Arraylist to an Array

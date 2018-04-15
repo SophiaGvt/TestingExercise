@@ -17,6 +17,9 @@ public class MyFileUtilitiesTest {
 	@Rule
 	public final ExpectedException thrown = ExpectedException.none();
 	
+	@Rule
+	public final ExpectedException thrown2 = ExpectedException.none();
+	
 	@Test
 	public void test_readFile_normal() {
 		int[] grades = {3, 4, 5, 7, 0};
@@ -36,6 +39,12 @@ public class MyFileUtilitiesTest {
 	
 	@Test
 	public void test_readFile_IllegalArgumentException() {
+		thrown.expect(IllegalArgumentException.class);
+		throw new IllegalArgumentException();
+	}
+	
+	@Test
+	public void test_readFile_Exception2() {
 		thrown.expect(IllegalArgumentException.class);
 		throw new IllegalArgumentException();
 	}
