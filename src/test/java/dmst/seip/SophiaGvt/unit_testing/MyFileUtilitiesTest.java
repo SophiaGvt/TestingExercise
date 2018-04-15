@@ -20,13 +20,13 @@ public class MyFileUtilitiesTest {
 	@Test
 	public void test_readFile_normal() {
 		int[] grades = {3, 4, 5, 7, 0};
-		Assert.assertArrayEquals(grades, mfu.readFile("C:\\Users\\Sophie\\workspace\\unit_testing\\src\\test\\resources\\file1.txt"));
+		Assert.assertArrayEquals(grades, mfu.readFile(".\\src\\test\\resources\\file1.txt"));
 	}
 	
 	@Test
 	public void test_readFile_small() {
 		int[] grades = {0};
-		Assert.assertArrayEquals(grades, mfu.readFile("C:\\Users\\Sophie\\workspace\\unit_testing\\src\\test\\resources\\file2.txt"));
+		Assert.assertArrayEquals(grades, mfu.readFile(".\\src\\test\\resources\\file2.txt"));
 	}
 	
 	@Test

@@ -21,9 +21,9 @@ public class MyArrayOperationsTest {
 		// Mock the MyFileUtilities dependency
 		MyFileUtilities mfu = mock(MyFileUtilities.class);
 		
-		String file1 = "C:\\Users\\Sophie\\workspace\\unit_testing\\src\\test\\resources\\file1.txt";
-		String file2 = "C:\\Users\\Sophie\\workspace\\unit_testing\\src\\test\\resources\\file2.txt";
-		String file3 = "C:\\Users\\Sophie\\workspace\\unit_testing\\src\\test\\resources\\file3.txt";
+		String file1 = ".\\src\\test\\resources\\file1.txt";
+		String file2 = ".\\src\\test\\resources\\file2.txt";
+		String file3 = ".\\src\\test\\resources\\file3.txt";
 		
 		int[] arrayfile1 = {3, 4, 5, 7, 0};
 		int[] arrayfile2 = {0};

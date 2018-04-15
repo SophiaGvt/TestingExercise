@@ -32,4 +32,10 @@ public class MyMathTest {
 	public void testDevideByZero() {
 		mm.divide(7, 0);
 	}
+	
+	// Testing zero as a numerator
+	@Test
+	public void testDevideZero() {
+		mm.divide(0, 7);
+	}
 }
